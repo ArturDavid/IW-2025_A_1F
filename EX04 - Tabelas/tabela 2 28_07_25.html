@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TABELA 2</title>
+<!--ESTILO-->
+<style>
+    body {
+        font-family: Arial, helvetica, sans-serif; /*TIPO DA FONTE*/
+    }
+    table {
+        border-collapse: collapse; /*ELIMINA ESPAÇO ENTRE A CÉLULAS*/
+    }
+    caption {
+        font-size: 22px; /*TAMANHO DA FONTE DO TÍTULO DA TABELA*/
+        font-weight: bold; /*PESO OU INTENSIDADE DA FONTE*/
+        padding: 10px; /*DISTÂNCIA ENTRE O CONTEÚDO E AS BORDAS*/
+    }
+    td, th {
+        border: 1px solid gray; /*ESPESSURA E ESTILO DA BORDA DAS CÉLULAS*/
+        padding: 10px; /*DISTÂNCIA ENTRE O CONTEÚDO E AS BORDAS*/
+    }
+    img {
+        height: 85px; /*ALTURA DA TABELA*/
+        width: 110px; /*LARGURA DA TABELA*/
+    }
+</style>
+<!--transição entre html e css-->
+</head>
+<body>
+    <h1>TABELAS COM IMAGENS</h1>
+    <table>
+        <caption>COMIDAS FAVORITAS</caption>
+        <thead>
+            <tr>
+                <th>Grupos</th>
+                <th>Nomes</th>
+                <th colspan="3" scope="colgroup">Escolhas</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <th colspan="3">12 opções</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th rowspan="2">Mulheres</th>
+                <td>Maria</td>
+                <td><img src="melancia.jpg"></td>
+                <td><img src="morango.jpg"></td>
+                <td><img src="taco.jpg"></td>
+            </tr>
+            <tr>
+                <td>Mariana</td>
+                <td><img src="brigadeiro.jpg"></td>
+                <td><img src="sorvete.jpg"></td>
+                <td><img src="nutellaa.jpg"></td>
+            </tr>
+            <tr>
+                <th rowspan="2">Homens</th>
+                <td>Artur</td>
+                <td><img src="coxinha.jpg"></td>
+                <td><img src="churrasco.jpg"></td>
+                <td><img src="boi ralado.jpg"></td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td><img src="milk shake morango.jpg"></td>
+                <td><img src="marshmallow morangoo.jpg"></td>
+                <td><img src="bolo morango.jpg"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
