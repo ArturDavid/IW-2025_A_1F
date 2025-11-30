@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tênis de Mesa - Minimalista</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        /* Header fixo */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #0047AB;
+            padding: 20px;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin-left: 30px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #e0e0e0;
+        }
+
+        /* Seções lado a lado */
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 40px;
+            text-align: left;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            max-width: 1100px;
+        }
+
+        .text {
+            flex: 1;
+        }
+
+        .text h1, .text h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .text p {
+            font-size: 18px;
+        }
+
+        .image {
+            flex: 1;
+        }
+
+        .image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .hero { background-color: #ffffff; }
+        .about { background-color: #f0f0f0; }
+        .projects { background-color: #e9e9e9; }
+        .inicio { background-color: #fafafa; }
+
+        /* FOOTER */
+        footer {
+            background-color: #0047AB;
+            color: #fff;
+            text-align: center;
+            padding: 25px 10px;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 6px;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+
+        footer a:hover {
+            color: #dcdcdc;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">Tênis de Mesa</div>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#hero">Regras</a></li>
+                <li><a href="#about">História</a></li>
+                <li><a href="#projects">Hugo Calderano</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO INÍCIO -->
+    <section id="inicio" class="inicio">
+        <div class="content">
+            <div class="image">
+                <img src="maxresdefault (1).jpg" alt="Imagem início">
+            </div>
+            <div class="text">
+                <h1>Tênis de Mesa</h1>
+                <p>Veja informações sobre as regras, a história e o atleta brasileiro Hugo Calderano do tênis de mesa. Um esporte rápido, e muito estratégico.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGRAS -->
+    <section id="hero" class="hero">
+        <div class="content">
+            <div class="image">
+                <img src="tenis-de-mesa-og.webp" alt="Regras do tênis de mesa">
+            </div>
+            <div class="text">
+                <h2>Regras do Tênis de Mesa</h2>
+                <p>O tênis de mesa é jogado em uma mesa dividida por uma rede. Os jogadores devem rebater a bola fazendo-a tocar o lado adversário. Os sets vão até 11 pontos, com vantagem de 2 no mínimo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section id="about" class="about">
+        <div class="content">
+            <div class="image">
+                <img src="maxresdefault.jpg" alt="História do tênis de mesa">
+            </div>
+            <div class="text">
+                <h2>História do Tênis de Mesa</h2>
+                <p>O esporte surgiu no século XIX na Inglaterra como uma alternativa indoor (em local fechado) ao tênis tradicional. Em 1926 ocorreu a primeira competição oficial, tornando-se olímpico em 1988.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HUGO CALDERANO -->
+    <section id="projects" class="projects">
+        <div class="content">
+            <div class="image">
+                <img src="hugo-calderano-final-masc-medalha-1.jpg" alt="Hugo Calderano">
+            </div>
+            <div class="text">
+                <h2>Hugo Calderano</h2>
+                <p>Hugo Calderano é um dos maiores nomes do tênis de mesa brasileiro, com grandes conquistas internacionais e destaque mundial, sendo o primeiro jogador não asiático a ganhar um campeonato na Ásia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Tênis de Mesa — ETEC MCM</p>
+        <p>Artur David</p>
+        <p><a href="#inicio">Voltar ao topo</a></p>
+    </footer>
+
+    <!-- Rolagem suave -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href'))
+                    .scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+</html>
